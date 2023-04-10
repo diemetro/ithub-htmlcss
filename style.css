@@ -1,0 +1,5 @@
+@colorForButton: red;
+
+button {
+	background: @colorForButton;
+}

@@ -1,0 +1,72 @@
+.container { 
+    display: grid; 
+    background-color: white; 
+    gap: 0px; 
+    grid-template-areas: 'nav nav nav' 
+    					           'header header header'
+                         'content content content'
+                         'bottom bottom bottom'
+                         'section section section'
+                         'footer footer footer'; 
+  }
+  .container > div { 
+    background-color: rgb(8, 182, 168); 
+    font-size: 40px; 
+  }   
+  #nav{ 
+    grid-area: nav; 
+  } 
+  #header{ 
+    grid-area: header; 
+    background-color: white; 
+  } 
+  #content { 
+    grid-area: content; 
+    background-color: aqua;
+  }
+  #bottom { 
+    grid-area: bottom;  
+    background-color: white; 
+  }
+  #section { 
+    grid-area: section;  
+  } 
+  #footer { 
+    grid-area: footer; 
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    background-color: white;
+    padding: 25px;
+    max-width: 30%;
+  }
+  
+  .parent > div {
+    background-color: rgb(8, 182, 168); 
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    padding-bottom: 100%;
+    height: 0;
+  }
+
+  .grid-item {
+    align-items: start;
+    display: grid;
+    font-size: 1.1em;
+    padding: 0.5em;
+    color: white;
+  }
+
+  .cards1 {
+    background-color: #7DE0FF;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin: 15px 15px 15px 15px; 
+    line-height: 190px;
+    color: white;
+}

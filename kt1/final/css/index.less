@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+}
+
+@color-white: white;
+@color-gray: dimgray;
+@color-footer: #333333;
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.max-width {
+    max-width: 900px;
+} 
+
+.width100 {
+    width: 100%;
+} 
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.flex-column {
+    &:extend(.flex);
+    &:extend(.width100);
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-color: @color-white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-container {
+    .max-width;
+    .margin-auto;
+    background-color: @color-white;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.a {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-link {
+    margin: 0 7px;
+    text-decoration: none;
+    color: @color-gray;
+    font-size: 18px;
+}
+
+.main-logo {
+     display: flex;
+     width: 62px;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.content-section {
+    background-color: #F2F2F2;
+    padding: 50px 20px 50px 20px;
+}
+
+.content-container {
+    .max-width;
+    .margin-auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+}
+
+.content-grid-item {
+    .flex;
+    flex-wrap: wrap;
+    background-color: @color-white;
+} 
+
+
+.content-img {
+    .flex;
+    .width100;
+    object-fit: cover;
+}
+
+.content-textbox {
+    .flex-column;
+    background-color: @color-white;
+    color: @color-gray;
+  }
+
+.content-textbox-jack {
+    .flex-column;
+    background-color: #4D58D7;
+    color: @color-white;
+ }
+
+.content-textbox-big {
+    font-size: 32px;
+}
+
+.content-textbox-small {
+    font-size: 22px;
+}
+
+.footer-container {
+    .width100;
+    background-color: @color-footer;
+    color: @color-white;
+    font-size: medium;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-link {
+    color:#4F7997;
+    font-size: medium;
+}

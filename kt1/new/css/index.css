@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+}
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-container {
+    background-color: white;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.a {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-link {
+    margin: 0 7px;
+    text-decoration: none;
+    color:rgb(87, 87, 87);
+    font-size: 18px;
+}
+
+.main-logo {
+     display: flex;
+     width: 62px;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.content-section {
+    background-color: #F2F2F2;
+    padding: 50px 20px 50px 20px;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+}
+
+.content-grid-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background-color:white;
+} 
+
+
+.content-img {
+    display: flex;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.content-textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+  }
+
+.content-textbox-jack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D58D7;
+    color: white;
+    height: 100%;
+    width: 100%;
+ }
+
+.content-textbox-big {
+    font-size: 32px;
+}
+
+.content-textbox-small {
+    font-size: 22px;
+}
+
+.footer-container {
+    background-color: #333333;
+    color: white;
+    font-size: medium;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-link {
+    color:#4F7997;
+    font-size: medium;
+}

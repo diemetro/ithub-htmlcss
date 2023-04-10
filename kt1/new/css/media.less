@@ -1,0 +1,54 @@
+.textbox {
+    height: 360px;
+    width: 100%; 
+}
+
+.max-width {
+    max-width: 850px;
+} 
+
+
+@media screen and (max-width: 1000px) {
+    .header-container {
+        .max-width;
+        grid-template-columns: 1fr 4fr;
+        margin: 0 30px;
+    }
+
+    .header-nav {
+        display: none;
+    }   
+    
+    .menu-bar {
+        .max-width;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-bar-icon {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .content-container {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+    }
+
+    .content-img {
+        width: 100%;
+    }
+
+    .content-textbox {
+        .textbox
+    }
+
+    .content-textbox-jack {
+        .textbox
+    }
+    
+}
+
+

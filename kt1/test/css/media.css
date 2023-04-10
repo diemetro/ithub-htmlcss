@@ -1,0 +1,27 @@
+@media screen and (max-width: 1100px) {
+    .main-container {
+        max-width: 800px;
+    }
+    .header-container {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-nav {
+        display: none;
+    }
+
+    .menu-bar-icon {
+        font-size: 22px;
+    }
+    .header-container {
+        grid-template-columns: 1fr 11fr;
+        padding: 40px 0;
+    }
+}
