@@ -1,0 +1,40 @@
+* {margin: 0;
+    box-sizing: border-box;
+  }
+
+  section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container {
+    perspective: 500px;
+    margin: 0 40px;
+    background: rgba(195,209,212,.7);
+    border-radius: 5px;
+  }
+
+.flip {
+    height: 260px; 
+    border-radius: 5px;
+    transform: rotateX(180deg);
+    position: relative;
+    background: rgba(169,90,145,.8); 
+    animation: rotate 3s infinite;
+    backface-visibility: visible;
+  }
+
+.style-flat {
+    transform-style: flat;
+}
+
+.style-3d {
+    transform-style: preserve-3d;
+}
+
+@keyframes rotate {
+    50% {
+      transform: rotateX(0deg);
+    }
+}
